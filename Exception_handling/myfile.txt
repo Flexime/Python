@@ -1,0 +1,2 @@
+im inside txt help
+Writing to file :)
