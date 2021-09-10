@@ -1,40 +1,10 @@
-# Python program to find the element occurring
-# odd number of times
-	
-# function to find the element occurring odd
-# number of times
-def getOddOccurrence(arr, arr_size):
-	
-	for i in range(0,arr_size):
-		count = 0
-		for j in range(0, arr_size):
-			if arr[i] == arr[j]:
-				count+=1
-			
-		if (count % 2 != 0):
-			return arr[i]
-		
-	return -1
-
-
-
-def find_it(seq):
-      for i in range(0,len(seq)):
-        count = 0
-        for j in range(0, len(seq)):
-            if arr[i] == arr[j]:
-                count+=1
-             
-        if (count % 2 != 0):
-            return arr[i]
-        return -1
-
-
-	
-# driver code
-arr = [2, 3, 5, 4, 5, 2, 4, 3, 5, 2, 4, 4, 2 ]
-n = len(arr)
-print(find_it(arr))
-
-# This code has been contributed by
-# Smitha Dinesh Semwal
+import random as rand
+rows, cols = (5, 5)
+arr=[]
+for i in range(rows):
+    col = []
+    for j in range(cols):
+        col.append(rand.randrange(7)) # 0 если надо 2д масс из нулей 
+    arr.append(col)
+print(arr)
+print(arr[1:])
